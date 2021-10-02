@@ -108,6 +108,7 @@ def import_data(bot: Bot, update):
 @run_async
 @user_admin
 def export_data(bot: Bot, update: Update, chat_data):
+	user = update.effective_user
 	msg = update.effective_message 
 	
 	chat_id = update.effective_chat.id
